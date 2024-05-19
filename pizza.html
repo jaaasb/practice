@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Order Form</title>
+</head>
+<body>
+  <h1>Pizza Order Form</h1>
+
+  <form action="pizza.php" method="post">
+    
+    <label for="firstName">First Name: 
+      <input type="text" id="firstName" name="fName" >
+    </label><br><br>
+
+    <label for="lastName">Last Name:
+      <input type="text" id="lastName" name="lName">
+    </label><br><br>
+
+    <label for="email">Email Address: 
+      <input type="text" id="email" name="email">
+    </label><br><br>
+
+    <label for="contact">Contact Number: 
+      <input type="text" id="contact" name="contact">
+    </label><br><br>
+
+    <label for="Ddate">Preferred Delivery Date:
+      <input type="date" id="Ddate" name="delivery">
+    </label><br><br>
+
+    <p>Size: </p>
+    <label for="small">Small 
+      <input type="radio" id="small" name="small" value="SMALL">
+    </label>
+
+    <label for="medium">Medium 
+      <input type="radio" id="medium" name="medium" value="MEDIUM">
+    </label>
+
+    <label for="large">Large
+      <input type="radio" id="large" name="large" value="LARGE">
+    </label>
+
+    <p>Flavor</p>
+    <input type="checkbox" id="hawa" name="hawaiian"><label for="hawa">Hawaiian (Php 150.00)
+   <select name="quantity">
+    <option value="one">1</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+   </select>
+  </label><br>
+   
+  <input type="checkbox" id="pep" name="pepperoni"><label for="pep">Pepperoni (Php 140.00)
+    <select name="quantity">
+     <option value="one">1</option>
+     <option value="two">2</option>
+     <option value="three">3</option>
+    </select>
+   </label><br>
+
+   <input type="checkbox" id="veg" name="vegetable"><label for="veg">Vegetable (Php 130.00)
+    <select name="quantity">
+     <option value="one">1</option>
+     <option value="two">2</option>
+     <option value="three">3</option>
+    </select>
+   </label><br><br>
+
+   <label for="credit">Credit Card Number:
+    <input type="text" id="credit" name="credit">
+   </label><br><br>
+
+   <label for="password">PIN:
+    <input type="password" id="password" name="pin">
+   </label>
+
+   <p>Additional Note:</p>
+   <textarea name="additional"></textarea><br>
+
+   <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
